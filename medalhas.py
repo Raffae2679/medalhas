@@ -67,7 +67,7 @@ body {
 .st-bq{
 	border-left-color: rgb(48,52, 54);
 }
-.st-dw, .css-145kmo2{
+.st-dw, .css-145kmo2, .st-cj{
 	color: #CDC8C2;
 }
 .css-9t20qt:hover, .css-9t20qt:active, .css-9t20qt:focus{
