@@ -37,6 +37,69 @@ df_winter = df[['Gold.1', 'Silver.1', 'Bronze.1', 'Total.1']]
  
 option = st.sidebar.selectbox( 'Para qual página você deseja ir?',
 ('Inicio', 'olimpíadas de Verão', 'olimpíadas de Inverno', 'Dados'))
+darkmode = """
+<style>
+body {
+  background-color: rgb(24,26,27);
+  color: rgb(205, 200, 194);
+}
+.css-1aumxhk{
+	background-color: rgb(31, 33, 35)!important;
+	background-image: none;
+	color: rgb(205, 200, 194)!important;
+}
+.st-bp{
+	color: rgb(232, 230, 227);
+}
+.st-bu{
+    background-color: rgb(24, 26, 27);
+}
+
+.st-bt{
+	border-bottom-color: rgb(48,52, 54);
+}
+.st-bs{
+	border-top-color: rgb(48,52, 54);
+}
+.st-br{
+	border-right-color: rgb(48,52, 54);
+}
+.st-bq{
+	border-left-color: rgb(48,52, 54);
+}
+.st-dw, .css-145kmo2{
+	color: #CDC8C2;
+}
+.css-9t20qt:hover, .css-9t20qt:active, .css-9t20qt:focus{
+	background: rgb(31,33,35);
+    background-image: initial;
+    background-color: rgb(31, 33, 35);
+}
+.st-al{
+    color: rgb(131, 207, 224);
+}
+.css-12j8tsf, .css-197q6od{
+    border-color: rgb(41, 50, 68)!important;
+}
+.css-10r44n0, .css-1b32pqr{
+	background-color: rgb(31, 33, 35);
+    color: rgb(158, 150, 137);
+}
+path{
+	color: #CDC8C2;
+}
+.css-1wfujj4{
+	    border-top-color: rgb(41, 50, 68);
+}
+.css-13qyw8b{
+	background-color: rgb(31,33,35);
+}
+</style>
+"""
+ativo_dm = st.sidebar.checkbox('Dark mode')
+if ativo_dm:
+    st.markdown(darkmode,unsafe_allow_html=True)
+
 
 if option == 'Inicio':
     # Cabeçalho da Página Principal
